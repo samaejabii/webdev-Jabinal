@@ -1,0 +1,107 @@
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+              <span class="icon-bar" ></span>
+              <span class="icon-bar" ></span>
+              <span class="icon-bar" ></span>
+            </button>
+          <a routerLink="/" class="navbar-brand"> <img src="assets/images/leaselabs_logo_fullstack_rgb.png"> </a>
+      </div>
+      <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+          <ul class="nav navbar-nav">
+              <li class="header-list"><a href="#">Home</a></li>
+              <li class="header-list"><a href="#">Our work</a></li>
+              <li class="header-list"><a href="#">About Us</a></li>
+              <li class="header-list"><a href="#">Contact Us</a></li>
+              <li class="header-list specials"><a href="#" class="special_text">Specials</a></li>
+          </ul>
+          
+      </div>
+  </div>
+</nav> -->
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a routerLink="/" class="navbar-brand"> <img src="assets/images/leaselabs_logo_fullstack_rgb.png"> </a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <span class="header-list"><a href="#">Home</a></span>
+    <span class="header-list"><a href="#">Our work</a></span>
+    <span class="header-list"><a href="#">About Us</a></span>
+    <span class="header-list"><a href="#">Contact Us</a></span>
+    <span class="header-list specials"><a href="#" class="special_text">Specials</a></span>
+  </div>
+</div>
+<div class="flex-container mt-20">
+  <div class="flex-item-20 p-0">
+    <div class="pl-0 pr-30">
+      <p class="side-menu sub">SUBNAV</p>
+      <ul class="side-ul">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+      </ul>
+    </div>
+    <div class="pl-0 pr-30">
+      <p class="side-menu related">RELATED LINKS</p>
+      <ul class="side-ul">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-item-80">
+    <div class="header-container" id="box">
+      <h1 class="header-one">HEADING 1</h1>
+      <h4 class="header-two"> heading 2</h4>
+
+      <p class="content-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quos reprehenderit, molestias asperiores nesciunt ipsa incidunt ut consequuntur quae dolorum labore sit eveniet illum iste, sint ullam quibusdam et?</p>
+
+      <p class="content-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, voluptatum illo. Id provident aliquam dolor laborum hic placeat delectus consequuntur doloribus neque blanditiis, tempora quibusdam atque doloremque minima veritatis accusamus.</p>
+    
+      <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eum consequuntur non, temporibus ipsa nobis corporis qui labore officia nihil rerum asperiores, ab, quidem deserunt iusto odio eveniet impedit illum.</p>
+   
+      <div class="image-content__class-pictures">
+				<div class="class-pictures__class-content" *ngFor="let m of man">
+					<div class="class-content__img-container">
+						<img src="{{m.path}}" class="class-content__img">
+					</div>
+					<p class="class-content__class-caption --tx-white --fsl-15 --fw-700" >
+            <span class="--tx-upper">{{ m.heading }}</span><br>
+            <span class="class-caption__span --tx-white --fw-200 --fsl-12">{{ m.description }}</span>
+          </p>
+				</div>
+				<div class="class-pictures__class-content" *ngFor="let w of wizard">
+					<div class="class-content__img-container">
+						<img src="{{w.path}}" class="class-content__img">
+					</div>
+					<p class="class-content__class-caption --tx-white --fsl-15 --fw-700" >
+            <span class="--tx-upper">{{ w.heading }}</span><br>
+            <span class="class-caption__span --tx-white --fw-200 --fsl-12">{{ w.description }}</span>
+          </p>
+				</div>
+				<div class="class-pictures__class-content" *ngFor="let b of beast">
+					<div class="class-content__img-container">
+						<img src="{{b.path}}" class="class-content__img">
+					</div>
+					<p class="class-content__class-caption --tx-white --fsl-15 --fw-700" >
+            <span class="--tx-upper">{{ b.heading }}</span><br>
+            <span class="class-caption__span --tx-white --fw-200 --fsl-12">{{ b.description }}</span>
+          </p>
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
